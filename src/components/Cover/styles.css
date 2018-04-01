@@ -1,0 +1,27 @@
+.Cover {
+  align-items: center;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  height: 80vh;
+  min-height: 480px;
+  max-height: 800px;
+  justify-content: center;
+  position: relative;
+}
+.Cover::before {
+  background-color: rgba(0, 0, 0, 0.6);
+  bottom: 0;
+  content: '';
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.CoverBody {
+  margin: auto;
+  max-width: 720px;
+  position: relative;
+  z-index: 2;
+}

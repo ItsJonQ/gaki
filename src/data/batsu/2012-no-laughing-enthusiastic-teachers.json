@@ -2,7 +2,8 @@
   "segment": "Batsu",
   "series": "No Laughing - Enthusiastic Teachers",
   "seriesSeason": 2012,
-  "episodeCount": 10,
+  "artwork": "/assets/images/batsu2012.jpg",
+  "description": "The Gaki no Tsukai cast participated in the 6th annual punishment game (the 7th New Years show in the No Laughing Series). Unlike previous Batsu Games, this series contains two games which consists of Enthusiastic Teachers and Edo Time. For the Enthusiastic part, they were punished by the Black Army unit, and for the Edo time part, they were punished by the Ninja squad. (Like the No-Laughing Airport series, all members received over 200 butt slaps)",
   "episodes": [
     {
       "episodeNumber": 1,
@@ -11,6 +12,48 @@
     {
       "episodeNumber": 2,
       "videoId": "k2a2xjXIHRCdy6eQMSs"
+    },
+    {
+      "episodeNumber": 3,
+      "videoId": "k5GokKKOrfFRaj3N5YY"
+    },
+    {
+      "episodeNumber": 4,
+      "videoId": "k59vHnnebhQNHO3QRJh"
+    },
+    {
+      "episodeNumber": 5,
+      "videoId": "k5g1AsEvz7NmDB3RGnn"
+    },
+    {
+      "episodeNumber": 6,
+      "videoId": "kCoYsFr8PbctAB3TgBn"
+    },
+    {
+      "episodeNumber": 7,
+      "videoId": "k791QJIFAV6bEX3WawZ"
+    },
+    {
+      "episodeNumber": 8,
+      "videoId": "k19nIcUImeJkJf3Z4Ci"
+    },
+    {
+      "episodeNumber": 9,
+      "videoId": "kjZlEIcwCEK6vh3Z6DH"
+    },
+    {
+      "episodeNumber": 10,
+      "videoId": "k5hsBNGyGw4o5D6ziVU"
+    },
+    {
+      "episodeNumber": 11,
+      "videoId": "k5hsBNGyGw4o5D6ziVU",
+      "description": "Unseen Footage - Part 1"
+    },
+    {
+      "episodeNumber": 12,
+      "videoId": "k2sjV308g7ojGO6zn1j",
+      "description": "Unseen Footage - Part 2"
     }
   ]
 }

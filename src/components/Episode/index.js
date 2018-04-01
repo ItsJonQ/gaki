@@ -6,6 +6,7 @@ import VideoEmbed from '../VideoEmbed'
 class Episode extends Component {
   render () {
     const {
+      description,
       episode,
       episodeOf,
       prev,
@@ -16,7 +17,12 @@ class Episode extends Component {
 
     return (
       <div>
-        {title} ({episode}/{episodeOf})
+        <div>
+          {title}
+        </div>
+        <div>
+          {description}
+        </div>
         <VideoEmbed {...{ id: videoId }} />
         <Link href={prev}>Prev</Link>
         <Link href={next}>Next</Link>
