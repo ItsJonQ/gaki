@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import styles from './styles.css'
+import { SOURCES, getVideoSource } from '../../utilities/media'
 
 class VideoEmbed extends Component {
   render () {
@@ -12,7 +13,7 @@ class VideoEmbed extends Component {
       ...rest
     } = this.props
 
-    const src = getVideoSource(service, id)
+    const src = getVideoSource(id, service)
 
     if (!src) return null
 
@@ -38,28 +39,6 @@ class VideoEmbed extends Component {
         {true ? placeholder : iFrame}
       </div>
     )
-  }
-}
-
-const SOURCES = {
-  dailymotion: {
-    video: '//www.dailymotion.com/embed/video/',
-    thumbnail: '//www.dailymotion.com/thumbnail/video/'
-  }
-}
-
-/**
- * Returns the embed Url based on the video service.
- *
- * @param   {string} - service
- * @param   {string} - id
- * @returns {string}
- */
-const getVideoSource = (service, id) => {
-  if (!service || !id) return null
-  return {
-    video: `${SOURCES[service].video}${id}`,
-    thumbnail: `${SOURCES[service].thumbnail}${id}`
   }
 }
 

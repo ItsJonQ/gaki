@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
-import { Link } from 'preact-router/match'
-import Cover from '../Cover'
 import PropTypes from 'prop-types'
+import AX from '../AX'
+import EpisodeCover from '../EpisodeCover'
+import Cover from '../Cover'
+import { getVideoSource } from '../../utilities/media'
 
 class Season extends Component {
   render () {
@@ -16,16 +18,27 @@ class Season extends Component {
 
     const heading = `${segment} - ${season}`
     const episodesMarkup = episodes.map(episode => {
-      const { title, url } = episode
+      const { title, url, videoId } = episode
+      const artwork = getVideoSource(videoId).thumbnail
+
       return (
-        <Link href={url} key={url}>{title}</Link>
+        <EpisodeCover
+          {...{
+            artwork,
+            key: url,
+            href: url,
+            title
+          }}
+        />
       )
     })
 
     return (
       <div>
         <Cover {...{ artwork, heading, title, description }} />
-        {episodesMarkup}
+        <AX.NodeList style={{ maxWidth: 960, margin: 'auto', padding: 40, overflow: 'hidden'}}>
+          {episodesMarkup}
+        </AX.NodeList>
       </div>
     )
   }
