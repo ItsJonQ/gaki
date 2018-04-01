@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'preact-router/match'
 import PropTypes from 'prop-types'
 import VideoEmbed from '../VideoEmbed'
 
@@ -7,21 +8,18 @@ class Episode extends Component {
     const {
       episode,
       episodeOf,
-      segment,
-      segmentSeason,
-      series,
+      prev,
+      next,
       title,
       videoId
     } = this.props
 
-    const episodeTitle = title || (
-      `${segment} ${segmentSeason} - ${series} - Episode: ${episode}/${episodeOf}`
-    )
-
     return (
       <div>
-        {episodeTitle}
+        {title} ({episode}/{episodeOf})
         <VideoEmbed {...{ id: videoId }} />
+        <Link href={prev}>Prev</Link>
+        <Link href={next}>Next</Link>
       </div>
     )
   }

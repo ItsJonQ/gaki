@@ -6,35 +6,36 @@ class VideoEmbed extends Component {
   render () {
     const {
       id,
-      service
-      // height,
-      // width
-      // ...rest
+      service,
+      height,
+      width,
+      ...rest
     } = this.props
 
     const src = getVideoSource(service, id)
 
     if (!src) return null
 
-    // const componentProps = {
-    //   ...rest,
-    //   allow: 'autoplay',
-    //   frameborder: 0,
-    //   height,
-    //   src: src.video,
-    //   width
-    // }
+    const componentProps = {
+      ...rest,
+      allow: 'autoplay',
+      frameborder: 0,
+      height,
+      src: src.video,
+      width
+    }
 
-    // const iFrame = (
-    //   <iframe {...componentProps} />
-    // )
-    // const Image = (
-    //   <img src={src.thumbnail} />
-    // )
+    const iFrame = (
+      <iframe {...componentProps} />
+    )
+
+    const placeholder = (
+      <div className={styles.VideoEmbed} />
+    )
 
     return (
       <div style={{maxWidth: 400}}>
-        <div className={styles.VideoEmbed} />
+        {true ? placeholder : iFrame}
       </div>
     )
   }
