@@ -2,58 +2,70 @@
   "segment": "Batsu",
   "series": "No Laughing - Enthusiastic Teachers",
   "seriesSeason": 2012,
-  "artwork": "/assets/images/batsu2012.jpg",
+  "artwork": "/assets/images/batsu/2012/batsu-2012-artwork.jpg",
   "description": "The Gaki no Tsukai cast participated in the 6th annual punishment game (the 7th New Years show in the No Laughing Series). Unlike previous Batsu Games, this series contains two games which consists of Enthusiastic Teachers and Edo Time. For the Enthusiastic part, they were punished by the Black Army unit, and for the Edo time part, they were punished by the Ninja squad. (Like the No-Laughing Airport series, all members received over 200 butt slaps)",
   "episodes": [
     {
       "episodeNumber": 1,
-      "videoId": "kPOSMI6qrmDkFgeHgcT"
+      "videoId": "kPOSMI6qrmDkFgeHgcT",
+      "artwork": "/assets/images/batsu/2012/batsu-2012-01.jpg"
     },
     {
       "episodeNumber": 2,
-      "videoId": "k2a2xjXIHRCdy6eQMSs"
+      "videoId": "k2a2xjXIHRCdy6eQMSs",
+      "artwork": "/assets/images/batsu/2012/batsu-2012-02.jpg"
     },
     {
       "episodeNumber": 3,
-      "videoId": "k5GokKKOrfFRaj3N5YY"
+      "videoId": "k5GokKKOrfFRaj3N5YY",
+      "artwork": "/assets/images/batsu/2012/batsu-2012-03.jpg"
     },
     {
       "episodeNumber": 4,
-      "videoId": "k59vHnnebhQNHO3QRJh"
+      "videoId": "k59vHnnebhQNHO3QRJh",
+      "artwork": "/assets/images/batsu/2012/batsu-2012-04.jpg"
     },
     {
       "episodeNumber": 5,
-      "videoId": "k5g1AsEvz7NmDB3RGnn"
+      "videoId": "k5g1AsEvz7NmDB3RGnn",
+      "artwork": "/assets/images/batsu/2012/batsu-2012-05.jpg"
     },
     {
       "episodeNumber": 6,
-      "videoId": "kCoYsFr8PbctAB3TgBn"
+      "videoId": "kCoYsFr8PbctAB3TgBn",
+      "artwork": "/assets/images/batsu/2012/batsu-2012-06.jpg"
     },
     {
       "episodeNumber": 7,
-      "videoId": "k791QJIFAV6bEX3WawZ"
+      "videoId": "k791QJIFAV6bEX3WawZ",
+      "artwork": "/assets/images/batsu/2012/batsu-2012-07.jpg"
     },
     {
       "episodeNumber": 8,
-      "videoId": "k19nIcUImeJkJf3Z4Ci"
+      "videoId": "k19nIcUImeJkJf3Z4Ci",
+      "artwork": "/assets/images/batsu/2012/batsu-2012-08.jpg"
     },
     {
       "episodeNumber": 9,
-      "videoId": "kjZlEIcwCEK6vh3Z6DH"
+      "videoId": "kjZlEIcwCEK6vh3Z6DH",
+      "artwork": "/assets/images/batsu/2012/batsu-2012-09.jpg"
     },
     {
       "episodeNumber": 10,
-      "videoId": "k7jmuCG10Sfrkb3ZlDh"
+      "videoId": "k7jmuCG10Sfrkb3ZlDh",
+      "artwork": "/assets/images/batsu/2012/batsu-2012-10.jpg"
     },
     {
       "episodeNumber": 11,
       "videoId": "k5hsBNGyGw4o5D6ziVU",
-      "description": "Unseen Footage - Part 1"
+      "description": "Unseen Footage - Part 1",
+      "artwork": "/assets/images/batsu/2012/batsu-2012-11.jpg"
     },
     {
       "episodeNumber": 12,
       "videoId": "k2sjV308g7ojGO6zn1j",
-      "description": "Unseen Footage - Part 2"
+      "description": "Unseen Footage - Part 2",
+      "artwork": "/assets/images/batsu/2012/batsu-2012-12.jpg"
     }
   ]
 }

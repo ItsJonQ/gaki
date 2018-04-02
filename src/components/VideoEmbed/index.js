@@ -36,7 +36,7 @@ class VideoEmbed extends Component {
 
     return (
       <div style={{maxWidth: 400}}>
-        {true ? placeholder : iFrame}
+        {false ? placeholder : iFrame}
       </div>
     )
   }

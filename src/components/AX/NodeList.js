@@ -22,6 +22,7 @@ class NodeList extends Component {
     const {
       children,
       className,
+      render,
       sequence,
       stagger,
       ...rest
@@ -36,7 +37,14 @@ class NodeList extends Component {
       className
     )
 
-    return (<div className={componentClassName} {...rest}>{children}</div>)
+    return render ? render({
+      className: componentClassName,
+      ...rest
+    }) : (
+      <div className={componentClassName} {...rest}>
+        {children}
+      </div>
+    )
   }
 }
 
