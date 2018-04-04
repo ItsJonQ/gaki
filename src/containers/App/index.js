@@ -6,6 +6,7 @@ import Episode from '../Episode'
 import store from '../../store'
 import styles from './styles.css'
 import '@awesomecss/animations/dist/animations.css'
+import './globalVariables.css'
 import './globalStyles.css'
 
 if (module.hot) {

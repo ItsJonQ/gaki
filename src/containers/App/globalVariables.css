@@ -1,0 +1,5 @@
+:root {
+  --GakiColorBackgroundRGB: 34, 34, 34;
+  --GakiColorBackground: rgba(var(--GakiColorBackgroundRGB), 1);
+  --GakiColorFont: #fff;
+}

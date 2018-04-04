@@ -22,7 +22,7 @@ class Season extends Component {
       const { artwork, title, url, videoId } = episode
 
       return (
-        <Grid.Col size={3}>
+        <Grid.Col size={4}>
           <EpisodeCover
             {...{
               artwork,
@@ -35,9 +35,18 @@ class Season extends Component {
       )
     })
 
+    const { url: playUrl } = episodes[0]
+
     return (
       <div>
-        <Cover {...{ artwork, heading, title, description }} />
+        <Cover {...{
+          artwork,
+          description,
+          heading,
+          playTitle: 'Watch',
+          playUrl,
+          title
+        }} />
         <Grid.Container>
           <AX.NodeList render={(props) => {
             return (

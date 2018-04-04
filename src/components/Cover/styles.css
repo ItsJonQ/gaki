@@ -4,9 +4,10 @@
   background-size: cover;
   display: flex;
   height: 80vh;
-  min-height: 480px;
-  max-height: 800px;
   justify-content: center;
+  max-height: 800px;
+  max-width: 100%;
+  min-height: 480px;
   position: relative;
 }
 .Cover::before {
@@ -19,7 +20,10 @@
   top: 0;
 }
 .Cover::after {
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+  background: linear-gradient(
+    rgba(var(--GakiColorBackgroundRGB), 0),
+    rgba(var(--GakiColorBackgroundRGB), 1)
+  );
   bottom: 0;
   content: '';
   left: 0;
@@ -31,8 +35,11 @@
 
 .CoverBody {
   margin: auto;
-  max-width: 720px;
   position: relative;
   text-shadow: 0 1px 20px rgba(0, 0, 0, 0.2);
+  max-width: 100%;
   z-index: 2;
+}
+
+.PlayButton {
 }

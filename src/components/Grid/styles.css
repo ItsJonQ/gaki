@@ -25,5 +25,11 @@
 }
 
 .Col-3 {
-  width: calc(100% / 3);
+  width: calc(100% * (3/12));
+}
+.Col-4 {
+  width: calc(100% * (4/12));
+}
+.Col-8 {
+  width: calc(100% * (8/12));
 }
