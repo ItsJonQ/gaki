@@ -18,6 +18,17 @@
   margin-right: var(--GakiGridGutter * -1);
 }
 
+.Row--seamless {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.Row--seamless .Col {
+  margin-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .Col {
   padding-left: var(--GakiGridGutter);
   padding-right: var(--GakiGridGutter);

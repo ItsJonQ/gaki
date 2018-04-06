@@ -6,11 +6,13 @@ const Row = props => {
   const {
     className,
     children,
+    seamless,
     ...rest
   } = props
 
   const componentClassName = classNames(
     styles.Row,
+    seamless && styles['Row--seamless'],
     className
   )
 

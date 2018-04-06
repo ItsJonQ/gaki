@@ -9,6 +9,8 @@
   max-width: 100%;
   min-height: 480px;
   position: relative;
+  transition: all 200ms ease;
+  will-change: background-image;
 }
 .Cover::before {
   background-color: rgba(0, 0, 0, 0.6);

@@ -6,6 +6,7 @@ import Grid from '../Grid'
 import EpisodeCover from '../EpisodeCover'
 import Cover from '../Cover'
 import { getVideoSource } from '../../utilities/media'
+import styles from './styles.css'
 
 class Season extends Component {
   render () {
@@ -26,7 +27,7 @@ class Season extends Component {
       const { artwork, title, url, videoId } = episode
 
       return (
-        <Grid.Col size={4}>
+        <Grid.Col className={styles.EpisodeCover} size={4}>
           <EpisodeCover
             {...{
               onMouseEnter: () => { changeBackgroundCover(artwork) },
@@ -53,13 +54,9 @@ class Season extends Component {
           title
         }} />
         <Grid.Container onMouseLeave={resetBackgroundCover}>
-          <AX.NodeList render={(props) => {
-            return (
-              <Grid.Row {...props}>
-                {episodesMarkup}
-              </Grid.Row>
-            )
-          }} />
+          <Grid.Row seamless>
+            {episodesMarkup}
+          </Grid.Row>
         </Grid.Container>
       </AppContainer>
     )

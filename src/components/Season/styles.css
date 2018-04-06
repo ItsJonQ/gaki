@@ -1,0 +1,15 @@
+.EpisodeCover {
+  --CB: cubic-bezier(0.215, 0.61, 0.355, 1);
+  opacity: 0.5;
+  position: relative;
+  transform: scale(1);
+  transition: opacity 200ms var(--CB), transform 200ms var(--CB);
+  will-change: opacity, transform;
+  z-index: 0;
+}
+
+.EpisodeCover:hover {
+  opacity: 1;
+  transform: scale(1.1);
+  z-index: 2;
+}

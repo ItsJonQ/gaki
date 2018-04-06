@@ -13,6 +13,7 @@ const Col = props => {
 
   const componentClassName = classNames(
     styles.Col,
+    'Col',
     size && styles[`Col-${size}`],
     className
   )
