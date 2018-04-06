@@ -16,7 +16,7 @@ const EpisodeCover = props => {
   })
 
   return (
-    <Link className={styles.EpisodeCover} href={href} style={componentStyles}>
+    <Link className={styles.EpisodeCover} href={href} style={componentStyles} {...rest}>
       <div className={styles.EpisodeCoverBody}>
         <div className={styles.EpisodeCoverTitle}>
           <h3>

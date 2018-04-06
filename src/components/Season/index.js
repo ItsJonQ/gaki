@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+import AppContainer from '../AppContainer'
 import AX from '../AX'
 import Grid from '../Grid'
 import EpisodeCover from '../EpisodeCover'
@@ -10,8 +11,11 @@ class Season extends Component {
   render () {
     const {
       artwork,
+      backgroundCover,
+      changeBackgroundCover,
       description,
       episodes,
+      resetBackgroundCover,
       season,
       segment,
       title
@@ -25,6 +29,7 @@ class Season extends Component {
         <Grid.Col size={4}>
           <EpisodeCover
             {...{
+              onMouseEnter: () => { changeBackgroundCover(artwork) },
               artwork,
               key: url,
               href: url,
@@ -38,16 +43,16 @@ class Season extends Component {
     const { url: playUrl } = episodes[0]
 
     return (
-      <div>
+      <AppContainer>
         <Cover {...{
-          artwork,
+          artwork: backgroundCover || artwork,
           description,
           heading,
           playTitle: 'Watch',
           playUrl,
           title
         }} />
-        <Grid.Container>
+        <Grid.Container onMouseLeave={resetBackgroundCover}>
           <AX.NodeList render={(props) => {
             return (
               <Grid.Row {...props}>
@@ -56,7 +61,7 @@ class Season extends Component {
             )
           }} />
         </Grid.Container>
-      </div>
+      </AppContainer>
     )
   }
 }

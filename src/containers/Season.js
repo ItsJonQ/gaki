@@ -28,6 +28,7 @@ const Route = props => {
   }))
 
   const componentProps = {
+    ...rest,
     ...seasonProps,
     episodes,
     season: seasonProps.seriesSeason,
@@ -37,7 +38,20 @@ const Route = props => {
   return <Season {...componentProps} />
 }
 
-const actions = store => ({})
-const mapStateToProps = (state) => ({ data: state.data })
+const actions = store => ({
+  changeBackgroundCover: (state, backgroundCover) => ({
+    ...state,
+    backgroundCover
+  }),
+
+  resetBackgroundCover: (state) => ({
+    ...state,
+    backgroundCover: undefined
+  })
+})
+const mapStateToProps = (state) => ({
+  backgroundCover: state.backgroundCover,
+  data: state.data
+})
 
 export default connect(mapStateToProps, actions)(Route)
